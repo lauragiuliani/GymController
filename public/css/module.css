@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root {
+    --primaryColor: #7159c1;
+    --headerBg: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primaryColor);
+}
+
+/*---===HEADER===---*/
+header {width: 100%;}
+
+.headerContent {
+    padding: 2%;
+    text-align: center;
+    background-color: var(--headerBg);
+}
+
+.headerContent a {
+    color: #777;
+    font-size: 17px;
+    position: relative;
+}
+
+.headerContent a + a {margin-left: 1%;}
+
+/*---===HEADER EFFECTS START===---*/
+
+.headerContent a.active {
+    font-weight: bold;
+    color: var(--primaryColor);
+}
+
+.headerContent a:hover {
+    color: var(--primaryColor);
+}
+
+.headerContent a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background-color: var(--primaryColor);
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+.headerContent a:hover::after {
+    width: 100%;
+    transition: width 200ms ease-in-out;
+}
+/*---===HEADER END===---*/
+
+/*---===FOOTER===---*/
+
+footer {width: 100%;}
+ 
+.footer {
+    height: 10vh;
+    background-color:#EEEEEE;   
+}
+
+.footer p, .footer a {color: #999999;}
+
+.footerContent {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    font: 400 12px/22px 'Roboto', sans-serif;
+}

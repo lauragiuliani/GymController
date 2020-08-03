@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/module.css">
+    {% block head %} <title>Gym Manager</title> {% endblock %}
+</head>  
+<body>
+    <header>
+        <div class="headerContent">
+            <a href="/">Instructors</a>
+            <a href="/members">Members</a></li> 
+        </div>      
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <div class="footer">
+            <div class="footerContent">
+                <p>Feito com &#10084; por <a href="https://www.linkedin.com/in/lauragiulianip/">Laura Giuliani</a></p>
+                <p>Todos os direitos reservados - Gym Manager</p>
+            </div>  
+        </div>
+    </footer>
+</body>
+</html>
