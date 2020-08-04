@@ -2,6 +2,7 @@
 
 :root {
     --primaryColor: #7159c1;
+    --secondaryColor: #F7DF1E;
     --headerBg: white;
 }
 * {
@@ -64,11 +65,15 @@ header {width: 100%;}
 
 /*---===FOOTER===---*/
 
-footer {width: 100%;}
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
  
 .footer {
-    height: 10vh;
-    background-color:#EEEEEE;   
+    height: 8vh;
+    background-color:#EEEEEE;
 }
 
 .footer p, .footer a {color: #999999;}
@@ -79,5 +84,5 @@ footer {width: 100%;}
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    font: 400 12px/22px 'Roboto', sans-serif;
+    font: 400 12px/16px 'Roboto', sans-serif;
 }
