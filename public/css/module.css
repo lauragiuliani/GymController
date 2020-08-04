@@ -11,6 +11,7 @@
     border: 0;
     text-decoration: none;
     box-sizing: border-box;
+    outline: none;
 }
 
 body, html {
@@ -63,7 +64,7 @@ header {width: 100%;}
 }
 /*---===HEADER END===---*/
 
-/*---===FOOTER===---*/
+/*---===FOOTER===---
 
 footer {
     width: 100%;
@@ -86,3 +87,5 @@ footer {
     flex-direction: column;
     font: 400 12px/16px 'Roboto', sans-serif;
 }
+
+*/

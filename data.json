@@ -1,0 +1,13 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "created_at": 1596548949260,
+      "avatar_url": "https://beginnersbook.com/2013/03/constructors-in-java/",
+      "name": "Laura",
+      "birth": 970272000000,
+      "gender": "F",
+      "services": "Gym"
+    }
+  ]
+}
