@@ -1,6 +1,6 @@
 const fs = require('fs') //file system
-const data = require('./data.json')
-const { age, date } = require('./utils')
+const data = require('../data.json')
+const { age, date } = require('../utils')
 const Intl = require('intl')
 
 
@@ -26,6 +26,7 @@ exports.show = function (req, res) { //gerar link com o ID dos instrutores cadas
 
     return res.render('instructors/show', { instructor } ) //Enviar dados
 }
+exports.create = function(req, res) { return res.render("instructors/create") }
 //CREATE
 exports.post = function(req, res) {
     const keys = Object.keys(req.body)
@@ -68,7 +69,7 @@ exports.edit = function(req, res) {
 
     const instructor = {
         ...foundInstructor,
-        birth: date(foundInstructor.birth)
+        birth: date(foundInstructor.birth).iso
     }
 
     return res.render('instructors/edit', { instructor })
@@ -90,10 +91,11 @@ exports.put = function(req, res) {
     const instrcutor = { 
         ...foundInstructor,
         ...req.body,
-        birth: Date.parse(req.body.birth)
+        birth: Date.parse(req.body.birth),
+        id: Number(req.body.id)
     }
 
-    data.instructors[index] = instrcutor
+    data.instructors[index] = instructor
 
     fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
         if(err) return res.send("Write error")
