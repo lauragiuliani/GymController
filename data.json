@@ -1,19 +1,8 @@
 {
   "members": [
     {
-      "id": 1,
-      "avatar_url": "https://app.rocketseat.com.br/node/fase-03-1/group/membros/lesson/ajustando-dados-de-cadastro-de-novo-membro",
-      "name": "Laura novo",
-      "email": "laura@laura.com",
-      "birth": 961632000000,
-      "gender": "F",
-      "blood": "AB+",
-      "weight": "56",
-      "height": "162"
-    },
-    {
       "id": 2,
-      "avatar_url": "https://app.rocketseat.com.br/node/fase-03-1/group/membros/lesson/editando-membros-1",
+      "avatar_url": "https://images.unsplash.com/photo-1470468969717-61d5d54fd036?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=383&q=80",
       "name": "Laura novo",
       "email": "laura@laura.com",
       "birth": 954374400000,
@@ -24,15 +13,6 @@
     }
   ],
   "instructors": [
-    {
-      "id": 1,
-      "created_at": 1596632949919,
-      "avatar_url": "https://images.unsplash.com/photo-1577221084712-45b0445d2b00?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=343&q=80",
-      "name": "Nathanael",
-      "birth": 946512000000,
-      "gender": "M",
-      "services": "Natação, Artes marciais"
-    },
     {
       "id": 3,
       "created_at": 1597061276329,
